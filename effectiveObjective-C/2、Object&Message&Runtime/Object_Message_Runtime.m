@@ -9,7 +9,7 @@
 #import "Object_Message_Runtime.h"
 #import "PropertyExample.h"
 #import "StrongCopyExample.h"
-#import <objc/message.h>
+#import "InvacationExample.h"
 @interface Object_Message_Runtime()
 
 @end
@@ -122,6 +122,22 @@
      2、objc_msgSend函数会在接收者所属的类中搜寻其方法列表，如果能找到这个跟选择子名称相同的方法，就跳转到其实现代码，往下执行。若是当前类没找到，那就沿着继承体系继续向上查找，等找到合适方法之后再跳转 ，如果最终还是找不到，那就进入消息转发的流程去进行处理了。
      3、说过了OC的函数调用实现，你会觉得消息转发要处理很多，尤其是在搜索上，幸运的是objc_msgSend在搜索这块是有做缓存的，每个OC的类都有一块这样的缓存，objc_msgSend会将匹配结果缓存在快速映射表(fast map)中，这样以来这个类一些频繁调用的方法会出现在fast map 中，不用再去一遍一遍的在方法列表中搜索了。
      4、还有一个有趣的点，就是在底层处理发送消息的时候，有用到尾调用优化，大概原理就是在函数末尾调用某个不含返回值函数时，编译器会自动的不在栈空间上重新进行分配内存，而是直接释放所有调用函数内部的局部变量，然后直接进入被调用函数的地址。
+     */
+    
+    //12、理解消息转发机制
+    /*
+     参照InvacationExample中注释
+     */
+    InvacationExample *invacation = [[InvacationExample alloc] init];
+    invacation.string = @"123";
+    NSLog(@"dict.string == %@", invacation.string);
+    
+    //13、用“方法调配技术”调试“黑盒方法”
+    /*
+     1、每一个Class都有一个isa指针指向一个唯一的Meta Class
+     2、每一个Meta Class的isa指针都指向最上层的Meta Class，这个Meta Class是NSObject的Meta Class。(包括NSObject的Meta Class的isa指针也是指向的NSObject的Meta Class，也就是自己，这里形成了个闭环)
+     3、每一个Meta Class的super class指针指向它原本Class的 Super Class的Meta Class (这里最上层的NSObject的Meta Class的super class指针还是指向自己)
+     4、最上层的NSObject Class的super class指向 nil
      */
 }
 

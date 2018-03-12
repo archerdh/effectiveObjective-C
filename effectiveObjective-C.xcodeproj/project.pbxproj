@@ -13,6 +13,13 @@
 		275E68C2204DA29600D479C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 275E68C1204DA29600D479C2 /* Assets.xcassets */; };
 		275E68C5204DA29600D479C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 275E68C3204DA29600D479C2 /* LaunchScreen.storyboard */; };
 		275E68C8204DA29600D479C2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 275E68C7204DA29600D479C2 /* main.m */; };
+		313CE9A320516E4600139D16 /* InvacationExample.m in Sources */ = {isa = PBXBuildFile; fileRef = 313CE9A220516E4600139D16 /* InvacationExample.m */; };
+		313CE9A72052352D00139D16 /* MethodSwizzlingExampleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 313CE9A62052352D00139D16 /* MethodSwizzlingExampleView.m */; };
+		313CE9A92052353500139D16 /* MethodSwizzlingExampleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 313CE9A82052353500139D16 /* MethodSwizzlingExampleView.xib */; };
+		313CE9AC2052365500139D16 /* UIFont+MethodSwizzlingExample.m in Sources */ = {isa = PBXBuildFile; fileRef = 313CE9AB2052365500139D16 /* UIFont+MethodSwizzlingExample.m */; };
+		313CE9B02052555C00139D16 /* UILabel+MethodSwizzlingLabelExample.m in Sources */ = {isa = PBXBuildFile; fileRef = 313CE9AF2052555C00139D16 /* UILabel+MethodSwizzlingLabelExample.m */; };
+		313CE9B62052808800139D16 /* NameSpace.m in Sources */ = {isa = PBXBuildFile; fileRef = 313CE9B52052808800139D16 /* NameSpace.m */; };
+		313CE9B9205281D300139D16 /* NameSpaceExample.m in Sources */ = {isa = PBXBuildFile; fileRef = 313CE9B8205281D300139D16 /* NameSpaceExample.m */; };
 		31B9D5C4204E97E8009C21AF /* ObjectC.m in Sources */ = {isa = PBXBuildFile; fileRef = 31B9D5C3204E97E8009C21AF /* ObjectC.m */; };
 		31B9D5C8204E9F3E009C21AF /* Object_Message_Runtime.m in Sources */ = {isa = PBXBuildFile; fileRef = 31B9D5C7204E9F3E009C21AF /* Object_Message_Runtime.m */; };
 		31B9D5CB204EC335009C21AF /* PropertyExample.m in Sources */ = {isa = PBXBuildFile; fileRef = 31B9D5CA204EC335009C21AF /* PropertyExample.m */; };
@@ -30,6 +37,19 @@
 		275E68C4204DA29600D479C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		275E68C6204DA29600D479C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		275E68C7204DA29600D479C2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		313CE9A120516E4600139D16 /* InvacationExample.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InvacationExample.h; sourceTree = "<group>"; };
+		313CE9A220516E4600139D16 /* InvacationExample.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InvacationExample.m; sourceTree = "<group>"; };
+		313CE9A52052352D00139D16 /* MethodSwizzlingExampleView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MethodSwizzlingExampleView.h; sourceTree = "<group>"; };
+		313CE9A62052352D00139D16 /* MethodSwizzlingExampleView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MethodSwizzlingExampleView.m; sourceTree = "<group>"; };
+		313CE9A82052353500139D16 /* MethodSwizzlingExampleView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MethodSwizzlingExampleView.xib; sourceTree = "<group>"; };
+		313CE9AA2052365500139D16 /* UIFont+MethodSwizzlingExample.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIFont+MethodSwizzlingExample.h"; sourceTree = "<group>"; };
+		313CE9AB2052365500139D16 /* UIFont+MethodSwizzlingExample.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIFont+MethodSwizzlingExample.m"; sourceTree = "<group>"; };
+		313CE9AE2052555C00139D16 /* UILabel+MethodSwizzlingLabelExample.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UILabel+MethodSwizzlingLabelExample.h"; sourceTree = "<group>"; };
+		313CE9AF2052555C00139D16 /* UILabel+MethodSwizzlingLabelExample.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UILabel+MethodSwizzlingLabelExample.m"; sourceTree = "<group>"; };
+		313CE9B42052808800139D16 /* NameSpace.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NameSpace.h; sourceTree = "<group>"; };
+		313CE9B52052808800139D16 /* NameSpace.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NameSpace.m; sourceTree = "<group>"; };
+		313CE9B7205281D300139D16 /* NameSpaceExample.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NameSpaceExample.h; sourceTree = "<group>"; };
+		313CE9B8205281D300139D16 /* NameSpaceExample.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NameSpaceExample.m; sourceTree = "<group>"; };
 		31B9D5C2204E97E8009C21AF /* ObjectC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjectC.h; sourceTree = "<group>"; };
 		31B9D5C3204E97E8009C21AF /* ObjectC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObjectC.m; sourceTree = "<group>"; };
 		31B9D5C6204E9F3E009C21AF /* Object_Message_Runtime.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Object_Message_Runtime.h; sourceTree = "<group>"; };
@@ -70,6 +90,7 @@
 		275E68B7204DA29600D479C2 /* effectiveObjective-C */ = {
 			isa = PBXGroup;
 			children = (
+				313CE9B320527EBB00139D16 /* 3、nameSpace */,
 				31B9D5C5204E9F11009C21AF /* 2、Object&Message&Runtime */,
 				31B9D5C1204E974F009C21AF /* 1、ObjectC */,
 				275E68B8204DA29600D479C2 /* AppDelegate.h */,
@@ -83,6 +104,17 @@
 				275E68C7204DA29600D479C2 /* main.m */,
 			);
 			path = "effectiveObjective-C";
+			sourceTree = "<group>";
+		};
+		313CE9B320527EBB00139D16 /* 3、nameSpace */ = {
+			isa = PBXGroup;
+			children = (
+				313CE9B42052808800139D16 /* NameSpace.h */,
+				313CE9B52052808800139D16 /* NameSpace.m */,
+				313CE9B7205281D300139D16 /* NameSpaceExample.h */,
+				313CE9B8205281D300139D16 /* NameSpaceExample.m */,
+			);
+			path = "3、nameSpace";
 			sourceTree = "<group>";
 		};
 		31B9D5C1204E974F009C21AF /* 1、ObjectC */ = {
@@ -103,6 +135,15 @@
 				31B9D5CA204EC335009C21AF /* PropertyExample.m */,
 				31B9D5CC204EC7AB009C21AF /* StrongCopyExample.h */,
 				31B9D5CD204EC7AB009C21AF /* StrongCopyExample.m */,
+				313CE9A120516E4600139D16 /* InvacationExample.h */,
+				313CE9A220516E4600139D16 /* InvacationExample.m */,
+				313CE9A52052352D00139D16 /* MethodSwizzlingExampleView.h */,
+				313CE9A62052352D00139D16 /* MethodSwizzlingExampleView.m */,
+				313CE9A82052353500139D16 /* MethodSwizzlingExampleView.xib */,
+				313CE9AE2052555C00139D16 /* UILabel+MethodSwizzlingLabelExample.h */,
+				313CE9AF2052555C00139D16 /* UILabel+MethodSwizzlingLabelExample.m */,
+				313CE9AA2052365500139D16 /* UIFont+MethodSwizzlingExample.h */,
+				313CE9AB2052365500139D16 /* UIFont+MethodSwizzlingExample.m */,
 			);
 			path = "2、Object&Message&Runtime";
 			sourceTree = "<group>";
@@ -165,6 +206,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				313CE9A92052353500139D16 /* MethodSwizzlingExampleView.xib in Resources */,
 				275E68C5204DA29600D479C2 /* LaunchScreen.storyboard in Resources */,
 				275E68C2204DA29600D479C2 /* Assets.xcassets in Resources */,
 				275E68C0204DA29600D479C2 /* Main.storyboard in Resources */,
@@ -178,12 +220,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				313CE9B9205281D300139D16 /* NameSpaceExample.m in Sources */,
+				313CE9B02052555C00139D16 /* UILabel+MethodSwizzlingLabelExample.m in Sources */,
+				313CE9AC2052365500139D16 /* UIFont+MethodSwizzlingExample.m in Sources */,
 				275E68BD204DA29600D479C2 /* ViewController.m in Sources */,
 				31B9D5CE204EC7AB009C21AF /* StrongCopyExample.m in Sources */,
 				275E68C8204DA29600D479C2 /* main.m in Sources */,
 				31B9D5C8204E9F3E009C21AF /* Object_Message_Runtime.m in Sources */,
+				313CE9A72052352D00139D16 /* MethodSwizzlingExampleView.m in Sources */,
+				313CE9B62052808800139D16 /* NameSpace.m in Sources */,
 				31B9D5C4204E97E8009C21AF /* ObjectC.m in Sources */,
 				275E68BA204DA29600D479C2 /* AppDelegate.m in Sources */,
+				313CE9A320516E4600139D16 /* InvacationExample.m in Sources */,
 				31B9D5CB204EC335009C21AF /* PropertyExample.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

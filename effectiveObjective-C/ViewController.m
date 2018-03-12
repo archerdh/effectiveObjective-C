@@ -8,6 +8,8 @@
 
 #import "ViewController.h"
 #import "Object_Message_Runtime.h"
+#import "MethodSwizzlingExampleView.h"
+#import "NameSpace.h"
 @interface ViewController ()
 
 @end
@@ -19,6 +21,11 @@
     // Do any additional setup after loading the view, typically from a nib.
     
     [Object_Message_Runtime getMessage];
+    MethodSwizzlingExampleView *view = [MethodSwizzlingExampleView methodView];
+    [self.view addSubview:view];
+    
+    NameSpace *nameSpace = [NameSpace new];
+    [nameSpace getMessage];
 }
 
 @end
