@@ -20,6 +20,7 @@
 		313CE9B02052555C00139D16 /* UILabel+MethodSwizzlingLabelExample.m in Sources */ = {isa = PBXBuildFile; fileRef = 313CE9AF2052555C00139D16 /* UILabel+MethodSwizzlingLabelExample.m */; };
 		313CE9B62052808800139D16 /* NameSpace.m in Sources */ = {isa = PBXBuildFile; fileRef = 313CE9B52052808800139D16 /* NameSpace.m */; };
 		313CE9B9205281D300139D16 /* NameSpaceExample.m in Sources */ = {isa = PBXBuildFile; fileRef = 313CE9B8205281D300139D16 /* NameSpaceExample.m */; };
+		319D194D209C2EED00611FE6 /* DeclaringObjExample.m in Sources */ = {isa = PBXBuildFile; fileRef = 319D194C209C2EED00611FE6 /* DeclaringObjExample.m */; };
 		31B9D5C4204E97E8009C21AF /* ObjectC.m in Sources */ = {isa = PBXBuildFile; fileRef = 31B9D5C3204E97E8009C21AF /* ObjectC.m */; };
 		31B9D5C8204E9F3E009C21AF /* Object_Message_Runtime.m in Sources */ = {isa = PBXBuildFile; fileRef = 31B9D5C7204E9F3E009C21AF /* Object_Message_Runtime.m */; };
 		31B9D5CB204EC335009C21AF /* PropertyExample.m in Sources */ = {isa = PBXBuildFile; fileRef = 31B9D5CA204EC335009C21AF /* PropertyExample.m */; };
@@ -50,6 +51,8 @@
 		313CE9B52052808800139D16 /* NameSpace.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NameSpace.m; sourceTree = "<group>"; };
 		313CE9B7205281D300139D16 /* NameSpaceExample.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NameSpaceExample.h; sourceTree = "<group>"; };
 		313CE9B8205281D300139D16 /* NameSpaceExample.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NameSpaceExample.m; sourceTree = "<group>"; };
+		319D194B209C2EED00611FE6 /* DeclaringObjExample.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeclaringObjExample.h; sourceTree = "<group>"; };
+		319D194C209C2EED00611FE6 /* DeclaringObjExample.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeclaringObjExample.m; sourceTree = "<group>"; };
 		31B9D5C2204E97E8009C21AF /* ObjectC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjectC.h; sourceTree = "<group>"; };
 		31B9D5C3204E97E8009C21AF /* ObjectC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObjectC.m; sourceTree = "<group>"; };
 		31B9D5C6204E9F3E009C21AF /* Object_Message_Runtime.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Object_Message_Runtime.h; sourceTree = "<group>"; };
@@ -113,6 +116,8 @@
 				313CE9B52052808800139D16 /* NameSpace.m */,
 				313CE9B7205281D300139D16 /* NameSpaceExample.h */,
 				313CE9B8205281D300139D16 /* NameSpaceExample.m */,
+				319D194B209C2EED00611FE6 /* DeclaringObjExample.h */,
+				319D194C209C2EED00611FE6 /* DeclaringObjExample.m */,
 			);
 			path = "3、nameSpace";
 			sourceTree = "<group>";
@@ -222,6 +227,7 @@
 			files = (
 				313CE9B9205281D300139D16 /* NameSpaceExample.m in Sources */,
 				313CE9B02052555C00139D16 /* UILabel+MethodSwizzlingLabelExample.m in Sources */,
+				319D194D209C2EED00611FE6 /* DeclaringObjExample.m in Sources */,
 				313CE9AC2052365500139D16 /* UIFont+MethodSwizzlingExample.m in Sources */,
 				275E68BD204DA29600D479C2 /* ViewController.m in Sources */,
 				31B9D5CE204EC7AB009C21AF /* StrongCopyExample.m in Sources */,

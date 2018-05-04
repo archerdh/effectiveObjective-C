@@ -8,6 +8,7 @@
 
 #import "NameSpace.h"
 #import "NameSpaceExample.h"
+#import "DeclaringObjExample.h"
 
 @interface NameSpace ()<NameSpaceExampleDelegate>
 
@@ -29,6 +30,27 @@
 //    [nameSpace playSound];
     
     //16、提供全能初始化方法
+    /*
+     如果创建类的实例的方式不止一种，那么这个类就会有多个初始化方法，这样做很好，不过还是要在其中选定一个方法作为全能初始化方法，剩下的其余的初始化方法都要调用它，这样做的好处是以后如果初始化的逻辑更改了只需更改一处即可，或者是交给子类覆写的时候也只覆写这一个方法即可~
+     举个例子来说:可以看一下NSDate的实现在NSDate.h中NSDate类中定义了一个全能初始化方法：
+     - (instancetype)initWithTimeIntervalSinceReferenceDate:(NSTimeInterval)ti NS_DESIGNATED_INITIALIZER;
+     */
+    
+    //17、实现description方法
+    /*
+     通过覆写description方法或者debugDescription方法来在NSLog打印时或者LLDB打印时输出更多的自定义信息。(数据和字典的可以通过覆写descriptionWithLocale:方法)
+     */
+    
+    //18、尽量使用不可变对象
+    /*
+     尽量使用不可变的对象，也就是在对外属性声明的时候要尽量加上readonly修饰，默认是readwrite，这样一来，在外部就只能读取该数据，而不能修改它，使得这个类的实例所持有的数据更加安全。如果外部想要修改，可以提供方法来进行修改。
+     不要把可变的collection作为属性公开，而应提供相关方法，以此修改对象中的可变collection
+     */
+//    DeclaringObjExample *onePerson = [[DeclaringObjExample alloc] initWithName:@"小明" AndFriends:nil];
+//    DeclaringObjExample *declarExample = [[DeclaringObjExample alloc] initWithName:@"万里" AndFriends:[NSSet setWithObjects:onePerson, nil]];
+//    [declarExample removeFriend:onePerson];
+    
+    
 }
 
 - (void)soundPlayerDidFinished:(NameSpaceExample *)player
