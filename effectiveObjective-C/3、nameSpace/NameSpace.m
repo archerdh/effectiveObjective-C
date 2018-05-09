@@ -50,6 +50,23 @@
 //    DeclaringObjExample *declarExample = [[DeclaringObjExample alloc] initWithName:@"万里" AndFriends:[NSSet setWithObjects:onePerson, nil]];
 //    [declarExample removeFriend:onePerson];
     
+    //19、使用清晰而协调的命名方式
+    
+    //20、为私有方法名加前缀
+    /*
+     该为类内的私有方法增加前缀，以便区分
+     */
+    
+    //21、理解Objective-C错误模型
+    /*
+     最好微程序库中所发生的错误指定一个专用的错误范围字符串，使用此字符串创建nserror对象，并将其返回给库的使用者
+     */
+    
+    //22、理解NSCopying协议
+    /*
+     在拷贝对象时，需要注意拷贝执行的是浅拷贝还是深拷贝。深拷贝在拷贝对象时，会将对象的底层数据也进行了拷贝。浅拷贝是创建了一个新的对象指向要拷贝的内容。一般情况应该尽量执行浅拷贝。
+     */
+    
     
 }
 

@@ -21,6 +21,10 @@
 		313CE9B62052808800139D16 /* NameSpace.m in Sources */ = {isa = PBXBuildFile; fileRef = 313CE9B52052808800139D16 /* NameSpace.m */; };
 		313CE9B9205281D300139D16 /* NameSpaceExample.m in Sources */ = {isa = PBXBuildFile; fileRef = 313CE9B8205281D300139D16 /* NameSpaceExample.m */; };
 		319D194D209C2EED00611FE6 /* DeclaringObjExample.m in Sources */ = {isa = PBXBuildFile; fileRef = 319D194C209C2EED00611FE6 /* DeclaringObjExample.m */; };
+		319D195520A2A2CB00611FE6 /* Protocol_Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 319D195420A2A2CB00611FE6 /* Protocol_Category.m */; };
+		319D195820A2C64F00611FE6 /* CategoryPersonNormalExample.m in Sources */ = {isa = PBXBuildFile; fileRef = 319D195720A2C64F00611FE6 /* CategoryPersonNormalExample.m */; };
+		319D195B20A2C7DB00611FE6 /* CategoryPersonExample.m in Sources */ = {isa = PBXBuildFile; fileRef = 319D195A20A2C7DB00611FE6 /* CategoryPersonExample.m */; };
+		319D195E20A2C85F00611FE6 /* CategoryPersonExample+Play.m in Sources */ = {isa = PBXBuildFile; fileRef = 319D195D20A2C85F00611FE6 /* CategoryPersonExample+Play.m */; };
 		31B9D5C4204E97E8009C21AF /* ObjectC.m in Sources */ = {isa = PBXBuildFile; fileRef = 31B9D5C3204E97E8009C21AF /* ObjectC.m */; };
 		31B9D5C8204E9F3E009C21AF /* Object_Message_Runtime.m in Sources */ = {isa = PBXBuildFile; fileRef = 31B9D5C7204E9F3E009C21AF /* Object_Message_Runtime.m */; };
 		31B9D5CB204EC335009C21AF /* PropertyExample.m in Sources */ = {isa = PBXBuildFile; fileRef = 31B9D5CA204EC335009C21AF /* PropertyExample.m */; };
@@ -53,6 +57,14 @@
 		313CE9B8205281D300139D16 /* NameSpaceExample.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NameSpaceExample.m; sourceTree = "<group>"; };
 		319D194B209C2EED00611FE6 /* DeclaringObjExample.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeclaringObjExample.h; sourceTree = "<group>"; };
 		319D194C209C2EED00611FE6 /* DeclaringObjExample.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeclaringObjExample.m; sourceTree = "<group>"; };
+		319D195320A2A2CB00611FE6 /* Protocol_Category.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Protocol_Category.h; sourceTree = "<group>"; };
+		319D195420A2A2CB00611FE6 /* Protocol_Category.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Protocol_Category.m; sourceTree = "<group>"; };
+		319D195620A2C64F00611FE6 /* CategoryPersonNormalExample.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CategoryPersonNormalExample.h; sourceTree = "<group>"; };
+		319D195720A2C64F00611FE6 /* CategoryPersonNormalExample.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CategoryPersonNormalExample.m; sourceTree = "<group>"; };
+		319D195920A2C7DB00611FE6 /* CategoryPersonExample.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CategoryPersonExample.h; sourceTree = "<group>"; };
+		319D195A20A2C7DB00611FE6 /* CategoryPersonExample.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CategoryPersonExample.m; sourceTree = "<group>"; };
+		319D195C20A2C85F00611FE6 /* CategoryPersonExample+Play.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CategoryPersonExample+Play.h"; sourceTree = "<group>"; };
+		319D195D20A2C85F00611FE6 /* CategoryPersonExample+Play.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "CategoryPersonExample+Play.m"; sourceTree = "<group>"; };
 		31B9D5C2204E97E8009C21AF /* ObjectC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjectC.h; sourceTree = "<group>"; };
 		31B9D5C3204E97E8009C21AF /* ObjectC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObjectC.m; sourceTree = "<group>"; };
 		31B9D5C6204E9F3E009C21AF /* Object_Message_Runtime.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Object_Message_Runtime.h; sourceTree = "<group>"; };
@@ -93,6 +105,7 @@
 		275E68B7204DA29600D479C2 /* effectiveObjective-C */ = {
 			isa = PBXGroup;
 			children = (
+				319D195220A2A26E00611FE6 /* 4、Protocol&Category */,
 				313CE9B320527EBB00139D16 /* 3、nameSpace */,
 				31B9D5C5204E9F11009C21AF /* 2、Object&Message&Runtime */,
 				31B9D5C1204E974F009C21AF /* 1、ObjectC */,
@@ -120,6 +133,21 @@
 				319D194C209C2EED00611FE6 /* DeclaringObjExample.m */,
 			);
 			path = "3、nameSpace";
+			sourceTree = "<group>";
+		};
+		319D195220A2A26E00611FE6 /* 4、Protocol&Category */ = {
+			isa = PBXGroup;
+			children = (
+				319D195320A2A2CB00611FE6 /* Protocol_Category.h */,
+				319D195420A2A2CB00611FE6 /* Protocol_Category.m */,
+				319D195620A2C64F00611FE6 /* CategoryPersonNormalExample.h */,
+				319D195720A2C64F00611FE6 /* CategoryPersonNormalExample.m */,
+				319D195920A2C7DB00611FE6 /* CategoryPersonExample.h */,
+				319D195A20A2C7DB00611FE6 /* CategoryPersonExample.m */,
+				319D195C20A2C85F00611FE6 /* CategoryPersonExample+Play.h */,
+				319D195D20A2C85F00611FE6 /* CategoryPersonExample+Play.m */,
+			);
+			path = "4、Protocol&Category";
 			sourceTree = "<group>";
 		};
 		31B9D5C1204E974F009C21AF /* 1、ObjectC */ = {
@@ -227,6 +255,8 @@
 			files = (
 				313CE9B9205281D300139D16 /* NameSpaceExample.m in Sources */,
 				313CE9B02052555C00139D16 /* UILabel+MethodSwizzlingLabelExample.m in Sources */,
+				319D195820A2C64F00611FE6 /* CategoryPersonNormalExample.m in Sources */,
+				319D195E20A2C85F00611FE6 /* CategoryPersonExample+Play.m in Sources */,
 				319D194D209C2EED00611FE6 /* DeclaringObjExample.m in Sources */,
 				313CE9AC2052365500139D16 /* UIFont+MethodSwizzlingExample.m in Sources */,
 				275E68BD204DA29600D479C2 /* ViewController.m in Sources */,
@@ -238,6 +268,8 @@
 				31B9D5C4204E97E8009C21AF /* ObjectC.m in Sources */,
 				275E68BA204DA29600D479C2 /* AppDelegate.m in Sources */,
 				313CE9A320516E4600139D16 /* InvacationExample.m in Sources */,
+				319D195B20A2C7DB00611FE6 /* CategoryPersonExample.m in Sources */,
+				319D195520A2A2CB00611FE6 /* Protocol_Category.m in Sources */,
 				31B9D5CB204EC335009C21AF /* PropertyExample.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
